@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mish Property Cleaning Services | Buy Back Your Time</title>
+<meta name="description" content="Buy back your time — outsource the cleaning. Mish Property Cleaning Services offers residential, commercial, post-construction, deep cleaning, and Airbnb turnover cleaning in Metro Vigan. Call or text 0917 779 0335 for a free quote.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230B2338'/%3E%3Cg fill='none' stroke='%23D9AE4E' stroke-width='11' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20,80 L20,30 L50,64 L80,30 L80,80'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2338;
+    --navy-light:#123252;
+    --navy-deep:#081A2A;
+    --gold:#C9A24B;
+    --gold-light:#D9AE4E;
+    --bg-soft:#F3EFE6;
+    --bg-page:#FAF7F1;
+    --border-soft:#E6DECD;
+    --text:#1C2333;
+    --text-soft:#5B6672;
+    --white:#FFFFFF;
+    --radius:16px;
+    --shadow:0 10px 30px rgba(11,35,56,0.12);
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Inter',Arial,Helvetica,sans-serif;
+    color:var(--text);
+    background:var(--bg-page);
+    line-height:1.55;
+  }
+  h1,h2,h3{font-family:'Poppins',Arial,Helvetica,sans-serif;margin:0 0 12px;}
+  p{margin:0 0 16px;color:var(--text-soft);}
+  a{color:inherit;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:14px 28px;border-radius:999px;font-weight:700;font-size:16px;
+    text-decoration:none;border:2px solid transparent;cursor:pointer;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:hover{transform:translateY(-2px);}
+  .btn-gold{background:linear-gradient(135deg,var(--gold-light),var(--gold));color:var(--navy);box-shadow:0 8px 20px rgba(242,183,5,0.35);}
+  .btn-outline{background:transparent;color:var(--white);border-color:rgba(255,255,255,0.6);}
+  .btn-navy{background:var(--navy);color:var(--white);box-shadow:0 8px 20px rgba(11,60,93,0.25);}
+
+  /* header */
+  header.site-header{
+    position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.95);backdrop-filter:blur(6px);
+    box-shadow:0 2px 12px rgba(11,60,93,0.08);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:var(--maxw);margin:0 auto;}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-family:'Poppins',sans-serif;color:var(--navy);font-size:19px;text-decoration:none;}
+  .brand svg{width:38px;height:38px;flex:none;}
+  .brand span.accent{color:var(--gold);}
+  nav.links{display:none;align-items:center;gap:28px;}
+  nav.links a{text-decoration:none;color:var(--navy);font-weight:600;font-size:15px;}
+  nav.links a:hover{color:var(--navy-light);}
+  .nav-cta{display:none;}
+  @media(min-width:860px){
+    .nav-cta{display:inline-flex;}
+    nav.links{display:flex;}
+  }
+  .hamburger{display:flex;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;}
+  .hamburger span{width:26px;height:3px;background:var(--navy);border-radius:2px;}
+  @media(min-width:860px){.hamburger{display:none;}}
+  #mobileNav{display:none;flex-direction:column;gap:2px;background:var(--white);border-top:1px solid var(--border-soft);padding:8px 24px 18px;}
+  #mobileNav.open{display:flex;}
+  #mobileNav a{padding:10px 0;text-decoration:none;color:var(--navy);font-weight:600;border-bottom:1px solid var(--border-soft);}
+  @media(min-width:860px){#mobileNav{display:none !important;}}
+
+  /* hero */
+  .hero{
+    background:linear-gradient(135deg,var(--navy-light),var(--navy) 55%,var(--navy-deep) 100%);
+    color:var(--white);position:relative;overflow:hidden;
+    padding:76px 24px 90px;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-80px;top:-80px;width:360px;height:360px;border-radius:50%;
+    background:radial-gradient(circle,rgba(217,174,78,0.16),transparent 70%);
+  }
+  .hero-inner{max-width:var(--maxw);margin:0 auto;position:relative;z-index:1;text-align:center;}
+  .eyebrow{display:inline-block;background:rgba(217,174,78,0.12);border:1px solid rgba(217,174,78,0.4);
+    color:var(--gold-light);
+    padding:6px 16px;border-radius:999px;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:20px;}
+  .hero h1{font-size:clamp(32px,5vw,54px);line-height:1.15;max-width:820px;margin:0 auto 16px;}
+  .hero h1 .accent{color:var(--gold-light);}
+  .hero p.lead{font-family:'Lora',serif;font-style:italic;font-weight:500;color:rgba(255,255,255,0.88);font-size:clamp(17px,2.1vw,21px);max-width:640px;margin:0 auto 34px;}
+  .hero-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+  .hero-tags{margin-top:44px;display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+  .hero-tags span{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);padding:8px 16px;border-radius:999px;font-size:14px;font-weight:600;}
+
+  /* section shell */
+  section{padding:76px 24px;}
+  .section-head{text-align:center;max-width:640px;margin:0 auto 48px;}
+  .kicker{color:var(--navy);font-weight:800;letter-spacing:1.5px;text-transform:uppercase;font-size:13px;margin-bottom:0;display:block;}
+  .kicker::after{content:"";display:block;width:46px;height:2px;background:var(--gold);margin:12px auto 0;}
+  .section-head h2{font-size:clamp(26px,3.5vw,38px);color:var(--navy);margin-top:14px;}
+
+  /* services */
+  .services{background:var(--white);}
+  .service-grid{display:grid;grid-template-columns:1fr;gap:28px;max-width:var(--maxw);margin:0 auto;}
+  @media(min-width:620px){
+    .service-grid{grid-template-columns:repeat(4,1fr);}
+    .service-card{grid-column:span 2;}
+    .service-card:last-child:nth-child(odd){grid-column:2 / span 2;}
+  }
+  @media(min-width:980px){
+    .service-grid{grid-template-columns:repeat(6,1fr);}
+    .service-card:last-child:nth-child(odd){grid-column:span 2;}
+    .service-card:nth-child(4){grid-column:2 / span 2;}
+  }
+  .service-card{background:var(--bg-page);border-radius:var(--radius);padding:32px 26px;text-align:center;box-shadow:var(--shadow);transition:transform .18s ease;}
+  .service-card:hover{transform:translateY(-6px);}
+  .icon-badge{width:88px;height:88px;border-radius:50%;background:var(--navy);border:1.5px solid var(--gold);
+    display:flex;align-items:center;justify-content:center;margin:0 auto 18px;}
+  .icon-badge svg{width:44px;height:44px;}
+  .service-card h3{color:var(--navy);font-size:19px;}
+  .service-card p{font-size:14.5px;margin-bottom:0;}
+
+  /* why us */
+  .why-us{background:var(--bg-soft);}
+  .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;max-width:var(--maxw);margin:0 auto;}
+  .why-card{background:var(--white);border-radius:var(--radius);padding:26px 22px;box-shadow:var(--shadow);}
+  .why-card .check{width:42px;height:42px;border-radius:50%;background:transparent;color:var(--gold);border:2px solid var(--gold);
+    display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;margin-bottom:14px;}
+  .why-card h3{font-size:17px;color:var(--navy);margin-bottom:6px;}
+  .why-card p{font-size:14px;margin-bottom:0;}
+
+  /* availability */
+  .availability{background:var(--white);}
+  .avail-card{max-width:900px;margin:0 auto;background:var(--bg-page);border-radius:var(--radius);box-shadow:var(--shadow);padding:34px;}
+  .avail-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin-top:22px;}
+  .avail-day{background:var(--white);border-radius:12px;padding:16px 10px;text-align:center;border:2px solid var(--border-soft);}
+  .avail-day.closed{opacity:0.55;}
+  .avail-day .d{font-weight:800;color:var(--navy);font-size:14px;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;}
+  .avail-day .t{font-size:12.5px;color:var(--text-soft);font-weight:600;}
+  .avail-day.open{border-color:var(--gold-light);}
+  .avail-note{text-align:center;font-size:14px;color:var(--text-soft);margin-top:20px;margin-bottom:0;}
+
+  /* booking */
+  .booking{background:linear-gradient(135deg,var(--navy-light),var(--navy) 55%,var(--navy-deep) 100%);color:var(--white);}
+  .booking .section-head h2{color:var(--white);}
+  .booking .kicker{color:var(--gold-light);}
+  .booking-card{max-width:760px;margin:0 auto;background:var(--white);border-radius:20px;padding:36px;box-shadow:0 20px 50px rgba(0,0,0,0.25);}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
+  @media(max-width:600px){.form-row{grid-template-columns:1fr;}}
+  .field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px;}
+  .field label{font-size:13.5px;font-weight:700;color:var(--navy);}
+  .field input,.field select,.field textarea{
+    padding:12px 14px;border-radius:10px;border:1.5px solid var(--border-soft);font-size:15px;font-family:inherit;color:var(--text);background:#FCFAF5;
+  }
+  .field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--navy-light);border-color:var(--navy-light);}
+  .field textarea{resize:vertical;min-height:90px;}
+  .field input[type="file"]{padding:10px 14px;font-size:14px;cursor:pointer;}
+  .field-hint{font-size:12.5px;color:var(--text-soft);}
+  .submit-row{margin-top:8px;}
+  .submit-row button{width:100%;font-size:17px;padding:16px;}
+  #formStatus{display:none;margin-top:20px;padding:18px;border-radius:12px;background:var(--bg-soft);color:var(--navy);font-size:14px;}
+  #formStatus.show{display:block;}
+  #formStatus textarea{width:100%;margin-top:10px;min-height:120px;font-family:monospace;font-size:12.5px;padding:10px;border-radius:8px;border:1px solid var(--border-soft);}
+  #formStatus .copy-btn{margin-top:10px;}
+
+  footer{background:var(--navy-deep);color:rgba(255,255,255,0.85);padding:48px 24px 28px;}
+  .footer-inner{max-width:var(--maxw);margin:0 auto;text-align:center;}
+  .footer-inner .brand{color:var(--white);justify-content:center;margin-bottom:6px;}
+  .footer-tagline{font-family:'Lora',serif;font-style:italic;color:var(--gold-light);font-size:17px;margin-bottom:16px;}
+  .footer-inner p{color:rgba(255,255,255,0.65);font-size:14px;margin-bottom:6px;}
+  .footer-inner a.mail{color:var(--gold-light);font-weight:700;text-decoration:none;}
+  .footer-note{margin-top:22px;font-size:12px;color:rgba(255,255,255,0.4);}
+
+  /* testimonials */
+  .testimonials{background:var(--white);}
+  .testimonial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px;max-width:var(--maxw);margin:0 auto;}
+  .t-card{background:var(--bg-page);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:12px;}
+  .t-top{display:flex;align-items:center;gap:14px;}
+  .t-avatar{width:52px;height:52px;border-radius:50%;flex:none;object-fit:cover;background:var(--navy);color:var(--white);
+    display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;font-family:'Poppins',sans-serif;}
+  .t-name{font-weight:700;color:var(--navy);font-size:15px;}
+  .t-stars{color:var(--gold);font-size:15px;letter-spacing:1px;}
+  .t-text{font-size:14.5px;color:var(--text-soft);font-style:italic;margin-bottom:0;}
+  .testimonials-empty{text-align:center;color:var(--text-soft);font-size:15px;}
+
+  /* phone number + booking call-to-action */
+  .nav-actions{display:flex;align-items:center;gap:20px;}
+  .nav-phone{display:none;align-items:center;gap:7px;text-decoration:none;color:var(--navy);font-weight:700;font-size:15px;white-space:nowrap;}
+  .nav-phone svg{width:16px;height:16px;flex:none;color:var(--gold);}
+  @media(min-width:1120px){.nav-phone{display:inline-flex;}}
+  #mobileNav a.mobile-call{color:var(--gold);border-bottom:none;}
+  .hero-call{margin:24px 0 0;color:rgba(255,255,255,0.85);font-size:15.5px;font-weight:600;}
+  .hero-call a{color:var(--gold-light);font-weight:700;text-decoration:none;white-space:nowrap;}
+  [data-phone]{white-space:nowrap;}
+  .booking-cta{max-width:640px;text-align:center;}
+  .booking-lead{font-size:16.5px;color:var(--text);margin-bottom:24px;}
+  .booking-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+  .booking-alt{margin:22px 0 0;font-size:14px;overflow-wrap:anywhere;}
+  .booking-alt a{color:var(--navy);font-weight:700;display:inline-block;}
+  @media(max-width:600px){
+    .booking-card.booking-cta{padding:28px 20px;}
+    .booking-actions .btn{width:100%;padding:14px 16px;}
+    .booking-alt a{font-size:13px;}
+  }
+  .footer-inner a.phone{color:var(--white);font-weight:700;font-size:16px;text-decoration:none;}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav">
+    <a href="#home" class="brand">
+      <svg viewBox="0 0 100 100"><rect width="100" height="100" rx="20" fill="#0B2338"/><g fill="none" stroke="#D9AE4E" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"><path d="M20,80 L20,30 L50,64 L80,30 L80,80"/></g></svg>
+      Mish Property <span class="accent">Cleaning</span>
+    </a>
+    <nav class="links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#availability">Availability</a>
+      <a href="https://mish-tracker.onrender.com/book" data-book>Book Now</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="tel:+639177790335" class="nav-phone" data-tel><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span data-phone>0917 779 0335</span></a>
+      <a href="https://mish-tracker.onrender.com/book" class="btn btn-navy nav-cta" data-book>Get a Free Quote</a>
+    </div>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <div id="mobileNav">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#why-us">Why Us</a>
+    <a href="#availability">Availability</a>
+    <a href="https://mish-tracker.onrender.com/book" data-book>Book Now</a>
+    <a href="tel:+639177790335" class="mobile-call" data-tel>Call or Text <span data-phone>0917 779 0335</span></a>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <span class="eyebrow">More Time. Less Cleaning.</span>
+    <h1>Buy Back Your Time — <span class="accent">Outsource</span> the Cleaning</h1>
+    <p class="lead">Your time is too valuable to spend scrubbing floors. Let Mish Property Cleaning Services handle it — so you can get back to the things, and people, that matter most.</p>
+    <div class="hero-actions">
+      <a href="https://mish-tracker.onrender.com/book" class="btn btn-gold" data-book>Get My Time Back</a>
+      <a href="#services" class="btn btn-outline">See Our Services</a>
+    </div>
+    <p class="hero-call">Or call / text us at <a href="tel:+639177790335" data-tel><span data-phone>0917 779 0335</span></a></p>
+    <div class="hero-tags">
+      <span>Residential</span>
+      <span>Commercial</span>
+      <span>Post-Construction</span>
+      <span>Deep Cleaning</span>
+      <span>Airbnb / STR Turnovers</span>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="section-head">
+    <span class="kicker">What We Offer</span>
+    <h2>Cleaning Services Built Around You</h2>
+  </div>
+  <div class="service-grid">
+    <div class="service-card">
+      <div class="icon-badge">
+        <svg viewBox="-40 -40 80 80"><path d="M -34,4 L 0,-30 L 34,4 Z" fill="#D9AE4E"/><rect x="-24" y="4" width="48" height="32" fill="#D9AE4E"/><rect x="-8" y="14" width="16" height="22" fill="#0B2338"/></svg>
+      </div>
+      <h3>Residential Cleaning</h3>
+      <p>Regular or one-time home cleaning that keeps every room spotless — kitchens, bathrooms, bedrooms, and living spaces.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon-badge">
+        <svg viewBox="-40 -40 80 80">
+          <rect x="-28" y="-34" width="56" height="68" fill="#D9AE4E"/>
+          <rect x="-20" y="-26" width="10" height="10" fill="#0B2338"/><rect x="-5" y="-26" width="10" height="10" fill="#0B2338"/><rect x="10" y="-26" width="10" height="10" fill="#0B2338"/>
+          <rect x="-20" y="-9" width="10" height="10" fill="#0B2338"/><rect x="-5" y="-9" width="10" height="10" fill="#0B2338"/><rect x="10" y="-9" width="10" height="10" fill="#0B2338"/>
+          <rect x="-20" y="8" width="10" height="10" fill="#0B2338"/><rect x="10" y="8" width="10" height="10" fill="#0B2338"/>
+          <rect x="-6" y="8" width="12" height="26" fill="#0B2338"/>
+        </svg>
+      </div>
+      <h3>Commercial Cleaning</h3>
+      <p>Reliable cleaning for offices, retail spaces, and commercial properties, scheduled around your business hours.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon-badge">
+        <svg viewBox="-40 -40 80 80"><path d="M -32,8 A 32,30 0 0 1 32,8 Z" fill="#D9AE4E"/><rect x="-40" y="6" width="80" height="10" rx="4" fill="#D9AE4E"/><circle cx="0" cy="-16" r="4" fill="#D9AE4E"/></svg>
+      </div>
+      <h3>Post-Construction Cleaning</h3>
+      <p>Dust, debris, and residue removal after a renovation or build, so your space is move-in ready.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon-badge">
+        <svg viewBox="-40 -40 80 80" fill="#D9AE4E">
+          <path d="M0,-34 L9,-9 L34,0 L9,9 L0,34 L-9,9 L-34,0 L-9,-9 Z"/>
+          <path d="M28,-26 L31,-19 L38,-16 L31,-13 L28,-6 L25,-13 L18,-16 L25,-19 Z"/>
+          <path d="M-26,18 L-23,24 L-17,27 L-23,30 L-26,36 L-29,30 L-35,27 L-29,24 Z"/>
+        </svg>
+      </div>
+      <h3>Deep Cleaning</h3>
+      <p>A thorough top-to-bottom clean covering baseboards, vents, appliances, and every spot regular cleaning misses.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon-badge">
+        <svg viewBox="-40 -40 80 80"><circle cx="-17" cy="0" r="17" fill="#D9AE4E"/><circle cx="-20" cy="0" r="6" fill="#0B2338"/><rect x="-3" y="-5" width="39" height="10" fill="#D9AE4E"/><rect x="16" y="4" width="7" height="13" fill="#D9AE4E"/><rect x="28" y="4" width="8" height="10" fill="#D9AE4E"/></svg>
+      </div>
+      <h3>Airbnb / STR Turnovers</h3>
+      <p>Guest-ready turnover cleaning between bookings for Airbnb and short-term rental hosts, timed around your check-out and check-in.</p>
+    </div>
+  </div>
+</section>
+
+<section class="why-us" id="why-us">
+  <div class="section-head">
+    <span class="kicker">Why Choose Us</span>
+    <h2>Cleaning You Can Count On</h2>
+  </div>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="check">&#10003;</div>
+      <h3>Free Estimates</h3>
+      <p>No surprises — get a clear quote before we start.</p>
+    </div>
+    <div class="why-card">
+      <div class="check">&#10003;</div>
+      <h3>Satisfaction Guaranteed</h3>
+      <p>Not happy with an area? We'll make it right.</p>
+    </div>
+    <div class="why-card">
+      <div class="check">&#10003;</div>
+      <h3>Flexible Scheduling</h3>
+      <p>Book the day and time that works for you.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews section hidden until real client testimonials are ready. To bring it back,
+     remove this comment wrapper (and add the "Reviews" nav links back in the header). -->
+<!--
+<section class="testimonials" id="reviews">
+  <div class="section-head">
+    <span class="kicker">Client Love</span>
+    <h2>What Our Clients Say</h2>
+  </div>
+  <div class="testimonial-grid" id="testimonialGrid"><!- filled by script from CONFIG.testimonials -></div>
+</section>
+-->
+
+<section class="availability" id="availability">
+  <div class="section-head">
+    <span class="kicker">Booking Hours</span>
+    <h2>Our Current Availability</h2>
+  </div>
+  <div class="avail-card">
+    <p style="text-align:center;margin-bottom:0;">We're currently booking the days and hours below. Pick a preferred date and time when you book and we'll confirm within 24 hours.</p>
+    <div class="avail-grid" id="availGrid"><!-- filled by script from CONFIG.availability --></div>
+    <p class="avail-note">Hours shown are subject to change as we take on more clients — always confirm with us if your preferred slot is tight.</p>
+  </div>
+</section>
+
+<section class="booking" id="booking">
+  <div class="section-head">
+    <span class="kicker">Ready When You Are</span>
+    <h2>Buy Back Your Time — Request Your Free Quote</h2>
+  </div>
+  <div class="booking-card booking-cta">
+    <p class="booking-lead">Tell us what you need on our booking page &mdash; it only takes a minute. We'll check the schedule and confirm with you by text or email.</p>
+    <div class="booking-actions">
+      <a href="https://mish-tracker.onrender.com/book" class="btn btn-gold" data-book>Book Online</a>
+      <a href="tel:+639177790335" class="btn btn-navy" data-tel><span>Call or Text <span data-phone>0917 779 0335</span></span></a>
+    </div>
+    <p class="booking-alt">Prefer email? <a href="mailto:mishpropertycleaningservices@gmail.com" data-mail>mishpropertycleaningservices@gmail.com</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <a href="#home" class="brand">
+      <svg viewBox="0 0 100 100"><g fill="none" stroke="#D9AE4E" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"><path d="M20,80 L20,30 L50,64 L80,30 L80,80"/></g></svg>
+      Mish Property Cleaning Services
+    </a>
+    <p class="footer-tagline">&#8220;Buy Back Your Time&#8221;</p>
+    <p>Residential &bull; Commercial &bull; Post-Construction &bull; Deep Cleaning &bull; Airbnb / STR Turnovers</p>
+    <p id="addressText"></p>
+    <p id="serviceAreaText">Serving Metro Vigan and nearby towns</p>
+    <p><a class="phone" href="tel:+639177790335" data-tel><span data-phone>0917 779 0335</span></a></p>
+    <p><a class="mail" href="mailto:mishpropertycleaningservices@gmail.com" data-mail>mishpropertycleaningservices@gmail.com</a></p>
+    <p class="footer-note">&copy; 2026 Mish Property Cleaning Services. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  // ============================================================
+  // EDIT THIS BLOCK to update contact info, the booking link & the cleaner's availability.
+  // Everything below reads from here — no other code needs to change.
+  // ============================================================
+  const CONFIG = {
+    businessEmail: "mishpropertycleaningservices@gmail.com",
+    businessPhone: "0917 779 0335",          // as shown on the page
+    businessPhoneLink: "+639177790335",      // international format, used for tap-to-call
+    bookingUrl: "https://mish-tracker.onrender.com/book",  // where every "Book" button goes
+    officeAddress: "Bayubay Norte, San Vicente, Ilocos Sur",
+    serviceArea: "Serving Metro Vigan and nearby towns",
+    availability: {
+      "Mon": { open: true, hours: "8:00 AM – 6:00 PM" },
+      "Tue": { open: true, hours: "8:00 AM – 6:00 PM" },
+      "Wed": { open: true, hours: "8:00 AM – 6:00 PM" },
+      "Thu": { open: true, hours: "8:00 AM – 6:00 PM" },
+      "Fri": { open: true, hours: "8:00 AM – 6:00 PM" },
+      "Sat": { open: true, hours: "9:00 AM – 3:00 PM" },
+      "Sun": { open: false, hours: "Closed" }
+    },
+
+    // ---- CUSTOMER REVIEWS / PHOTOS ----
+    // To add a new review: copy one block below (the part between { and }),
+    // paste it before the closing "]", and fill in the fields.
+    //   name    - client's name (or first name + last initial for privacy)
+    //   rating  - a number from 1 to 5
+    //   text    - their review, in quotes
+    //   photo   - OPTIONAL. Leave as "" to show initials instead of a photo.
+    //             To use a real photo: upload it anywhere online (Google
+    //             Photos, Imgur, Facebook, your Netlify site's own /images
+    //             folder, etc.), then paste the direct image link here.
+    // Delete the two sample reviews below once you have real ones.
+    testimonials: [
+      {
+        name: "Sample Client — replace me",
+        rating: 5,
+        text: "This is a placeholder review. Replace it with a real one from your first happy client!",
+        photo: ""
+      },
+      {
+        name: "Another Sample Client",
+        rating: 5,
+        text: "Add real client photos here too if they say yes — just paste the image link in the photo field.",
+        photo: ""
+      }
+    ]
+  };
+  // ============================================================
+
+  // mobile nav toggle
+  document.getElementById('hamburgerBtn').addEventListener('click', function(){
+    document.getElementById('mobileNav').classList.toggle('open');
+  });
+  document.querySelectorAll('#mobileNav a').forEach(function(a){
+    a.addEventListener('click', function(){ document.getElementById('mobileNav').classList.remove('open'); });
+  });
+
+  // footer dynamic fields
+  document.getElementById('addressText').textContent = CONFIG.officeAddress;
+  document.getElementById('serviceAreaText').textContent = CONFIG.serviceArea;
+
+  // contact + booking links (all read from CONFIG above)
+  document.querySelectorAll('[data-mail]').forEach(function(a){
+    a.textContent = CONFIG.businessEmail;
+    a.href = "mailto:" + CONFIG.businessEmail;
+  });
+  document.querySelectorAll('[data-tel]').forEach(function(a){ a.href = "tel:" + CONFIG.businessPhoneLink; });
+  document.querySelectorAll('[data-phone]').forEach(function(el){ el.textContent = CONFIG.businessPhone; });
+  document.querySelectorAll('[data-book]').forEach(function(a){ a.href = CONFIG.bookingUrl; });
+
+  // The booking page's server goes to sleep when nobody has visited for a while and
+  // takes about half a minute to wake. Wake it quietly as soon as this page opens,
+  // so it is ready by the time a visitor taps a "Book" button.
+  try{
+    fetch(CONFIG.bookingUrl, { mode: "no-cors", cache: "no-store" }).catch(function(){});
+  }catch(e){}
+
+  // render availability grid
+  (function(){
+    var grid = document.getElementById('availGrid');
+    Object.keys(CONFIG.availability).forEach(function(day){
+      var info = CONFIG.availability[day];
+      var cell = document.createElement('div');
+      cell.className = 'avail-day ' + (info.open ? 'open' : 'closed');
+      cell.innerHTML = '<div class="d">' + day + '</div><div class="t">' + info.hours + '</div>';
+      grid.appendChild(cell);
+    });
+  })();
+
+  // render customer reviews / photos
+  (function(){
+    var grid = document.getElementById('testimonialGrid');
+    if(!grid){ return; } // Reviews section is currently hidden — nothing to render.
+    var list = CONFIG.testimonials || [];
+    if(list.length === 0){
+      grid.innerHTML = '<p class="testimonials-empty">Reviews coming soon — check back after our first few jobs!</p>';
+      return;
+    }
+    list.forEach(function(t){
+      var initials = (t.name || "?").trim().split(/\s+/).map(function(w){return w[0];}).slice(0,2).join('').toUpperCase();
+      var stars = '';
+      for(var i=1;i<=5;i++){ stars += (i <= (t.rating||5)) ? '★' : '☆'; }
+
+      var card = document.createElement('div');
+      card.className = 't-card';
+
+      var avatarHtml = t.photo
+        ? '<img class="t-avatar" src="' + t.photo + '" alt="' + t.name + '">'
+        : '<div class="t-avatar">' + initials + '</div>';
+
+      card.innerHTML =
+        '<div class="t-top">' + avatarHtml +
+          '<div><div class="t-name">' + t.name + '</div><div class="t-stars">' + stars + '</div></div>' +
+        '</div>' +
+        '<p class="t-text">“' + t.text + '”</p>' +
+        (t.photo ? '' : '');
+      grid.appendChild(card);
+    });
+  })();
+</script>
+
+</body>
+</html>

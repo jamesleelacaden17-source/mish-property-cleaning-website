@@ -5,6 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mish Property Cleaning Services | Buy Back Your Time</title>
 <meta name="description" content="Buy back your time — outsource the cleaning. Mish Property Cleaning Services offers residential, commercial, post-construction, deep cleaning, and Airbnb turnover cleaning in Metro Vigan. Call or text 0917 779 0335 for a free quote.">
+<meta name="theme-color" content="#0B2338">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mish Property Cleaning Services">
+<meta property="og:title" content="Mish Property Cleaning Services | Buy Back Your Time">
+<meta property="og:description" content="Residential, commercial, post-construction, deep cleaning and Airbnb turnovers in Metro Vigan. Call or text 0917 779 0335.">
+<meta property="og:url" content="https://mish-property-cleaning.onrender.com/">
+<meta property="og:image" content="https://mish-property-cleaning.onrender.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='26' fill='%230B2338'/%3E%3Cg transform='translate(12 13.23) scale(0.8)'%3E%3Cpath fill='%23D9AE4E' d='M60 27.07L102.46 69.54L109.54 62.46L60 12.93L10.46 62.46L17.54 69.54Z'/%3E%3Cpath fill='%23FAF7F1' d='M37 70.07L60 93.07L83 70.07L83 104L93 104L93 45.93L60 78.93L27 45.93L27 104L37 104Z'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,10 +66,14 @@
     box-shadow:0 2px 12px rgba(11,60,93,0.08);
   }
   .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:var(--maxw);margin:0 auto;}
-  .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-family:'Poppins',sans-serif;color:var(--navy);font-size:19px;text-decoration:none;}
-  .brand svg{width:38px;height:35px;flex:none;}
-  @media(min-width:860px){.brand svg{width:44px;height:40px;}}
-  .brand span.accent{color:var(--gold);}
+  /* The logo lockup: home mark + "Mish Property" over tracked "CLEANING SERVICES".
+     The descriptor is sized and tracked to end flush with the name, as in the logo files. */
+  .brand{display:flex;align-items:flex-end;gap:10px;font-family:'Poppins',sans-serif;color:var(--navy);text-decoration:none;--brand-size:18px;}
+  .brand svg{width:calc(var(--brand-size) * 2.52);height:calc(var(--brand-size) * 2.33);flex:none;}
+  .brand-text{display:flex;flex-direction:column;gap:calc(var(--brand-size) * 0.2);padding-bottom:calc(var(--brand-size) * 0.07);}
+  .brand-name{font-weight:700;font-size:var(--brand-size);line-height:0.95;letter-spacing:-0.015em;white-space:nowrap;}
+  .brand-desc{font-weight:600;font-size:calc(var(--brand-size) * 0.4513);line-height:1;letter-spacing:0.34em;margin-right:-0.34em;text-transform:uppercase;white-space:nowrap;color:#86661F;}
+  @media(min-width:860px){.brand{--brand-size:21px;gap:12px;}}
   nav.links{display:none;align-items:center;gap:28px;}
   nav.links a{text-decoration:none;color:var(--navy);font-weight:600;font-size:15px;}
   nav.links a:hover{color:var(--navy-light);}
@@ -170,8 +184,9 @@
 
   footer{background:var(--navy-deep);color:rgba(255,255,255,0.85);padding:48px 24px 28px;}
   .footer-inner{max-width:var(--maxw);margin:0 auto;text-align:center;}
-  .footer-inner .brand{color:var(--white);justify-content:center;margin-bottom:6px;}
-  .footer-tagline{font-family:'Lora',serif;font-style:italic;color:var(--gold-light);font-size:17px;margin-bottom:16px;}
+  .footer-inner .brand{color:var(--white);justify-content:center;margin-bottom:14px;--brand-size:24px;gap:13px;}
+  .footer-inner .brand-desc{color:var(--gold-light);}
+  .footer-inner p.footer-tagline{font-family:'Lora',serif;font-style:italic;color:var(--gold-light);font-size:17px;margin-bottom:16px;}
   .footer-inner p{color:rgba(255,255,255,0.65);font-size:14px;margin-bottom:6px;}
   .footer-inner a.mail{color:var(--gold-light);font-weight:700;text-decoration:none;}
   .footer-note{margin-top:22px;font-size:12px;color:rgba(255,255,255,0.4);}
@@ -214,9 +229,9 @@
 
 <header class="site-header">
   <div class="nav">
-    <a href="#home" class="brand">
+    <a href="#home" class="brand" aria-label="Mish Property Cleaning Services, home">
       <svg viewBox="8.46 10.93 103.07 95.07" aria-hidden="true"><path fill="#C9A24B" d="M60 27.07L102.46 69.54L109.54 62.46L60 12.93L10.46 62.46L17.54 69.54Z"/><path fill="#0B2338" d="M37 70.07L60 93.07L83 70.07L83 104L93 104L93 45.93L60 78.93L27 45.93L27 104L37 104Z"/></svg>
-      Mish Property <span class="accent">Cleaning</span>
+      <span class="brand-text"><span class="brand-name">Mish Property</span><span class="brand-desc">Cleaning Services</span></span>
     </a>
     <nav class="links">
       <a href="#home">Home</a>
@@ -380,9 +395,9 @@
 
 <footer>
   <div class="footer-inner">
-    <a href="#home" class="brand">
+    <a href="#home" class="brand" aria-label="Mish Property Cleaning Services, home">
       <svg viewBox="8.46 10.93 103.07 95.07" aria-hidden="true"><path fill="#D9AE4E" d="M60 27.07L102.46 69.54L109.54 62.46L60 12.93L10.46 62.46L17.54 69.54Z"/><path fill="#FAF7F1" d="M37 70.07L60 93.07L83 70.07L83 104L93 104L93 45.93L60 78.93L27 45.93L27 104L37 104Z"/></svg>
-      Mish Property Cleaning Services
+      <span class="brand-text"><span class="brand-name">Mish Property</span><span class="brand-desc">Cleaning Services</span></span>
     </a>
     <p class="footer-tagline">&#8220;Buy Back Your Time&#8221;</p>
     <p>Residential &bull; Commercial &bull; Post-Construction &bull; Deep Cleaning &bull; Airbnb / STR Turnovers</p>
